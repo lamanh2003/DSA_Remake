@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DB07C6B9-9730-47BD-8980-0754A9109CF9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DSA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Algorithms\DISJOIN SET UNION (DSU).cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Algorithms\KOSARAJU ALGORITHM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Algorithms\KRUSKAL ALGORITHM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA01024 - ĐẶT TÊN - 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02001 - DÃY SỐ 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02002 - DÃY SỐ 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02003 - DI CHUYỂN TRONG MÊ CUNG 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02004 - DI CHUYỂN TRONG MÊ CUNG 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02005 - HOÁN VỊ XÂU KÝ TỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02006 - DÃY CON TỔNG BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02007 - ĐỔI CHỖ CÁC CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02009 - CHIA MẢNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02010 - TỔ HỢP SỐ CÓ TỔNG BẰNG X.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02011 - MÁY ATM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02012 - DI CHUYỂN TRONG MA TRẬN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02013 - SỐ NGUYÊN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02014 - TỪ ĐIỂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02015 - LOẠI BỎ DẤU NGOẶC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02016 - SẮP XẾP QUÂN HẬU 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02017 - SẮP XẾP QUÂN HẬU 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02018 - BIỂU THỨC TOÁN HỌC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02019 - ĐƯỜNG ĐI DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02020 - SỐ NHỎ NHẤT CÓ N ƯỚC SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02021 - KÝ TỰ ĐẶC BIỆT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02022 - NGÀY ĐẶC BIỆT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02023 - ĐẶT TÊN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02024 - DÃY CON TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02025 - KÝ TỰ LẶP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02026 - PHÉP TOÁN CƠ BẢN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02027 - NGƯỜI DU LỊCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02028 - CHIA ĐỀU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02029 - THÁP HÀ NỘI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02030 - LIỆT KÊ XÂU KÝ TỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02031 - GHÉP CHỮ CÁI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02032 - TỔ HỢP SỐ CÓ TỔNG BẰNG X.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02033 - SỐ XA CÁCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02034 - TRÒ CHƠI VỚI CÁC CON SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02035 - HOÁN VỊ CÁC CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02036 - DÃY CON CÓ TỔNG LẺ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02037 - DÃY CON CÓ TỔNG NGUYÊN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02038 - DÃY CON CÓ K PHẦN TỬ TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02039 - PHÂN TÍCH SỐ 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02041 - BIẾN ĐỔI VỀ 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA02045 - TẬP CON CỦA XÂU KÝ TỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSA05009 - TẬP CON BẰNG NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Backtracking\DSAKT012 - ĐỔI TIỀN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04001 - LŨY THỪA.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04002 - LŨY THỪA ĐẢO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04003 - ĐẾM DÃY.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04004 - GẤP ĐÔI DÃY SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04005 - DÃY XÂU FIBONACI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04006 - ĐẾM SỐ BÍT 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04007 - HỆ CƠ SỐ K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04009 - LŨY THỪA MA TRẬN 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04010 - DÃY CON LIÊN TIẾP CÓ TỔNG LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04011 - TÍCH HAI SỐ NHỊ PHÂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04012 - TÍCH ĐA THỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04013 - SẮP XẾP KANGURU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04014 - CẶP NGHỊCH THẾ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04015 - TÍNH FLOOR(X).cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04016 - PHẦN TỬ THỨ K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04017 - PHẦN TỬ KHÁC NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04018 - ĐẾM SỐ 0.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04019 - CẶP ĐIỂM GẦN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04020 - TÌM KIẾM NHỊ PHÂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04021 - DÃY XÂU NHỊ PHÂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04022 - KÝ TỰ THỨ K TRONG XÂU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04024 - LŨY THỪA MA TRẬN 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04025 - DÃY SỐ VÔ HẠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04030 - SỐ TRIBONACCI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Divide and Conquer\DSA04035 - TÍNH LŨY THỪA.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05001 - XÂU CON CHUNG DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05003 - DÃY CON CHUNG DÀI NHẤT CỦA BA XÂU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05004 - DÃY CON TĂNG DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05005 - SỐ BƯỚC ÍT NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05006 - TỔNG LỚN NHẤT CỦA DÃY CON TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05007 - TỔNG LỚN NHẤT CỦA DÃY CON KHÔNG KỀ NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05008 - DÃY CON CÓ TỔNG BẰNG S.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05010 - DÃY CON DÀI NHẤT CÓ TỔNG CHIA HẾT CHO K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05011 - SỐ CÓ TỔNG CHỮ SỐ BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05012 - TỔ HỢP C(n, k).cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05013 - BẬC THANG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05014 - CATALAN NUMBER.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05015 - TÍNH P(N,K).cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05016 - SỐ UGLY.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05017 - DÃY SỐ BI-TONIC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05018 - XÂU CON ĐỐI XỨNG DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05019 - HÌNH VUÔNG LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05020 - ĐƯỜNG ĐI NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05021 - CẶP SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05022 - KÝ TỰ GIỐNG NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05023 - TỔNG CÁC XÂU CON.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05024 - TỔNG BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05025 - CON ẾCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05026 - XEM PHIM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05027 - CÁI TÚI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05028 - BIẾN ĐỔI XÂU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05029 - GIẢI MÃ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05030 - DI CHUYỂN VỀ GỐC TỌA ĐỘ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05031 - TỔNG BÌNH PHƯƠNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05032 - XÂU ĐỐI XỨNG 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05033 - XÂU ĐỐI XỨNG 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05034 - TỔNG SỐ CÁCH DI CHUYỂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05035 - CHỮ SỐ SẮP XẾP TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05036 - TĂNG - GIẢM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05037 - CHỮ SỐ SẮP XẾP TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05038 - DÃY CON TĂNG DÀI NHẤT 2 CHIỀU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05039 - TỔNG CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05040 - DÃY TAM GIÁC DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05042 - DÃY CON LIÊN TIẾP TỔNG BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05043 - SỐ THUẬN NGHỊCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05045 - BÀI TOÁN CÁI TÚI KHÔNG NGUYÊN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05046 - LŨY THỪA BẬC K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSA05047 - CHỌN Ô.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSAKT053 - SỐ NGUYÊN LỚN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSAKT055 - BÀI TOÁN CÁI TÚI 0-1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Dynamic Programming\DSAKT110 - NHÀ KHÔNG KỀ NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\CTDL_001 - THUẬT TOÁN SINH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\CTDL_002 - Tổng dãy con = K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\CTDL_003 - PHƯƠNG ÁN TỐI ƯU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\CTDL_004 - DÃY CON TĂNG DẦN BẬC K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01001 - XÂU NHỊ PHÂN KẾ TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01002 - TẬP CON KẾ TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01003 - HOÁN VỊ KẾ TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01004 - SINH TỔ HỢP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01005 - SINH HOÁN VỊ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01006 - HOÁN VỊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01007 - XÂU AB CÓ ĐỘ DÀI N.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01008 - XÂU NHỊ PHÂN CÓ K BIT 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01009 - XÂU AB ĐẶC BIỆT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01010 - TẬP QUÂN SỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01011 - HOÁN VỊ TIẾP THEO CỦA CHUỖI SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01012 - MÃ GRAY 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01013 - MÃ GRAY 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01014 - TẬP HỢP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01015 - TÌM BỘI SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01016 - PHÂN TÍCH SỐ 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01017 - MÃ GRAY 3.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01018 - TẬP CON LIỀN KỀ PHÍA TRƯỚC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01019 - HAHAHA.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01020 - XÂU NHỊ PHÂN TRƯỚC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01021 - TỔ HỢP TIẾP THEO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01022 - SỐ THỨ TỰ HOÁN VỊ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01023 - SỐ THỨ TỰ TỔ HỢP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01025 - ĐẶT TÊN - 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01026 - PHÁT LỘC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01027 - HOÁN VỊ DÃY SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01028 - LIỆT KÊ TỔ HỢP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA02008 - CHỌN SỐ TỪ MA TRẬN VUÔNG CẤP N.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09001 - CHUYỂN DANH SÁCH CẠNH SANG DANH SÁCH KỀ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09002 - CHUYỂN TỪ DANH SÁCH KỀ SANG DANH SÁCH CẠNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09003 - BIỂU DIỄN ĐỒ THỊ CÓ HƯỚNG..cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09004 - DFS TRÊN ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09005 - BFS TRÊN ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09006 - ĐƯỜNG ĐI THEO DFS VỚI ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09007 - ĐƯỜNG ĐI THEO BFS TRÊN ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09008 - ĐẾM SỐ THÀNH PHẦN LIÊN THÔNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09009 - TÌM SỐ THÀNH PHẦN LIÊN THÔNG VỚI BFS.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09010 - KIỂM TRA TÍNH LIÊN THÔNG MẠNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09011 - SỐ LƯỢNG HÒN ĐẢO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09012 - LIỆT KÊ ĐỈNH TRỤ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09013 - LIỆT KÊ CẠNH CẦU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09014 - KIỂM TRA CHU TRÌNH TRÊN ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09015 - KIỂM TRA CHU TRÌNH TRÊN ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09016 - KIỂM TRA CHU TRÌNH TRÊN ĐỒ THỊ CÓ HƯỚNG VỚI DFS.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09017 - KIỂM TRA ĐỒ THỊ CÓ PHẢI LÀ CÂY HAY KHÔNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09018 - LIỆT KÊ ĐỈNH TRỤ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09019 - KIỂM TRA CHU TRÌNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09020 - CHUYỂN DANH SÁCH KỀ SANG MA TRẬN KỀ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09021 - CHUYỂN MA TRẬN KỀ SANG DANH SÁCH KỀ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09022 - DFS TRÊN ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09024 - BFS TRÊN ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09025 - ĐƯỜNG ĐI THEO DFS VỚI ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09026 - ĐƯỜNG ĐI THEO BFS TRÊN ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09027 - KIỂM TRA ĐƯỜNG ĐI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09028 - TÔ MÀU ĐỒ THỊ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09029 - ĐƯỜNG ĐI HAMILTON.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09030 - ĐỒ THỊ HAI PHÍA.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09031 - CHÚ CỪU XA CÁCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09032 - KẾT BẠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09033 - MẠNG XÃ HỘI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09034 - ĐẾM SỐ AO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09037 - HỌP MẶT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA09049 - LAN TRUYỀN DINH DƯỠNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10001 - TÌM ĐƯỜNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10003 - KIỂM TRA CHU TRÌNH SỬ DỤNG DISJOIN SET.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10004 - ĐƯỜNG ĐI VÀ CHU TRÌNH EULER VỚI ĐỒ THỊ VÔ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10005 - CHU TRÌNH EULER TRONG ĐỒ THỊ CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10006 - CÂY KHUNG CỦA ĐỒ THỊ THEO THUẬT TOÁN DFS.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10007 - CÂY KHUNG CỦA ĐỒ THỊ THEO THUẬT TOÁN BFS.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10008 - DIJKSTRA.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10009 - FLOYD.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10011 - DI CHUYỂN TRÊN BẢNG SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10012 - ĐƯỜNG ĐI TRUNG BÌNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10015 - KRUSKAL.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10016 - NỐI ĐIỂM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\DSA10017 - CHU TRÌNH ÂM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Graph\TN05009 - CHU TRÌNH THEO DFS.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03001 - ĐỔI TIỀN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03002 - NHẦM CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03003 - TÌM MAX.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03004 - TỔNG NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03005 - CHIA MẢNG THÀNH HAI MẢNG CON CÓ TỔNG LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03006 - SẮP XẾP THAM LAM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03007 - GIÁ TRỊ NHỎ NHẤT CỦA BIỂU THỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03008 - SẮP XẾP CÔNG VIỆC 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03009 - SẮP XẾP CÔNG VIỆC 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03010 - NỐI DÂY 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03011 - NỐI DÂY 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03012 - SẮP ĐẶT XÂU KÝ TỰ 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03013 - SẮP ĐẶT XÂU KÝ TỰ 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03014 - SỐ KHỐI LẬP PHƯƠNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03015 - MUA LƯƠNG THỰC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03016 - SỐ NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03017 - GIÁ TRỊ NHỎ NHẤT CỦA XÂU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03018 - SỐ MAY MẮN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03019 - PHÂN SỐ ĐƠN VỊ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03020 - BIỂU THỨC ĐÚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03021 - TÌM DÃY SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03022 - TÍCH LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03023 - SẮP XẾP VIÊN BI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03024 - LỰA CHỌN TỐI ƯU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03025 - TRỤC TỌA ĐỘ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03026 - LỰA CHỌN THAM LAM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03027 - GIÁ TRỊ LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03033 - ATM THẾ HỆ MỚI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03034 - DÃY CON CHUNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Greedy\DSA03035 - SẮP XẾP ĐƠN GIẢN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Linked list\CTDL_005 - XÓA DỮ LIỆU TRONG DSLK ĐƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Linked list\CTDL_006 - LỌC DỮ LIỆU TRÙNG TRONG DSLK ĐƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Linked list\DSA07018 - TỔNG ĐA THỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08001 - CẤU TRÚC DỮ LIỆU HÀNG ĐỢI 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08002 - CẤU TRÚC DỮ LIỆU HÀNG ĐỢI 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08003 - HÀNG ĐỢI HAI ĐẦU (DEQUEUE).cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08004 - GIÁ TRỊ NHỎ NHẤT CỦA XÂU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08005 - SỐ NHỊ PHÂN TỪ 1 ĐẾN N.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08006 - SỐ 0 VÀ SỐ 9.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08007 - SỐ BDN 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08008 - SỐ BDN 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08009 - BIẾN ĐỔI S – T.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08010 - BIẾN ĐỔI SỐ TỰ NHIÊN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08011 - KHOẢNG CÁCH XÂU KÝ TỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08012 - TÌM SỐ K THỎA MÃN ĐIỀU KIỆN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08013 - DI CHUYỂN TRÁNH VẬT CẢN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08014 - GIEO MẦM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08015 - DI CHUYỂN TRONG KHÔNG GIAN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08016 - HEXGAME.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08017 - SỐ LỘC PHÁT 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08018 - SỐ LỘC PHÁT 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08019 - SỐ LỘC PHÁT 3.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08020 - BIẾN ĐỔI SỐ NGUYÊN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08021 - DI CHUYỂN TRONG MA TRẬN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08022 - BỘI SỐ LỚN NHẤT CỦA 3.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08025 - QUÂN MÃ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08029 - QUAY HÌNH VUÔNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Queue\DSA08045 - HÀNG RÀO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\CTDL_005 - XÓA DỮ LIỆU TRONG DSLK ĐƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\CTDL_006 - LỌC DỮ LIỆU TRÙNG TRONG DSLK ĐƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06001 - SẮP XẾP XEN KẼ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06002 - SẮP XẾP THEO GIÁ TRỊ TUYỆT ĐỐI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06003 - ĐỔI CHỖ ÍT NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06004 - HỢP VÀ GIAO CỦA HAI DÃY SỐ 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06005 - HỢP VÀ GIAO CỦA HAI DÃY SỐ 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06006 - SẮP XẾP [0 1 2].cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06007 - SẮP XẾP DÃY CON LIÊN TỤC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06008 - ĐẾM CẶP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06009 - CẶP SỐ TỔNG BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06010 - SẮP XẾP CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06011 - TỔNG GẦN 0 NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06012 - PHẦN TỬ LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06013 - SỐ LẦN XUẤT HIỆN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06014 - TỔNG CẶP SỐ NGUYÊN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06015 - MERGE SORT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06016 - TÍCH LỚN NHẤT - NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06017 - TRỘN HAI DÃY.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06018 - BỔ SUNG PHẦN TỬ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06019 - SẮP XẾP THEO SỐ LẦN XUẤT HIỆN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06020 - TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06021 - TÌM KIẾM TRONG DÃY SẮP XẾP VÒNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06022 - SỐ NHỎ NHẤT VÀ NHỎ THỨ HAI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06023 - SẮP XẾP ĐỔI CHỖ TRỰC TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06024 - SẮP XẾP CHỌN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06025 - SẮP XẾP CHÈN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06026 - SẮP XẾP NỔI BỌT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06027 - SẮP XẾP ĐỔI CHỖ TRỰC TIẾP - LIỆT KÊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06028 - SẮP XẾP CHỌN - LIỆT KÊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06029 - SẮP XẾP CHÈN - LIỆT KÊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06030 - SẮP XẾP NỔI BỌT - LIỆT KÊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06031 - PHẦN TỬ LỚN NHẤT TRONG DÃY CON.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06032 - BỘ BA SỐ CÓ TỔNG NHỎ HƠN K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06033 - KHOẢNG CÁCH XA NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06034 - CẶP SỐ CÓ TỔNG BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06035 - DÃY TAM GIÁC DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06036 - BỘ BA SỐ BẰNG K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06037 - SẮP XẾP ĐOẠN CON.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06038 - CẶP SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06039 - SỐ ĐẦU TIÊN BỊ LẶP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06040 - GIAO CỦA BA DÃY SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06041 - SỐ XUẤT HIỆN NHIỀU NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06043 - ĐIỂM CÂN BẰNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06044 - SẮP XẾP CHẴN LẺ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06045 - XÂU TỐT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06046 - CHÊNH LỆCH NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06047 - BỘ BA SỐ PYTAGO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06048 - SỐ LẦN QUAY VÒNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Sort and Search\DSA06049 - ĐẾM CẶP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07001 - NGĂN XẾP 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07002 - NGĂN XẾP 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07003 - KIỂM TRA BIỂU THỨC SỐ HỌC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07004 - ĐẾM SỐ DẤU NGOẶC ĐỔI CHIỀU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07005 - BIỂU THỨC TƯƠNG ĐƯƠNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07006 - XÓA DẤU NGOẶC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07007 - SO SÁNH BIỂU THỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07008 - BIẾN ĐỔI TRUNG TỐ - HẬU TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07009 - BIẾN ĐỔI TIỀN TỐ - TRUNG TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07010 - BIẾN ĐỐI TIỀN TỐ - HẬU TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07011 - BIẾN ĐỔI HẬU TỐ - TIỀN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07012 - BIẾN ĐỔI HẬU TỐ - TRUNG TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07013 - TÍNH GIÁ TRỊ BIỂU THỨC HẬU TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07014 - TÍNH GIÁ TRỊ BIỂU THỨC TIỀN TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07015 - TÍNH TOÁN GIÁ TRỊ BIỂU THỨC TRUNG TỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07016 - BIỂU THỨC TĂNG GIẢM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07017 - PHẦN TỬ BÊN PHẢI NHỎ HƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07018 - TỔNG ĐA THỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07019 - HÌNH CHỮ NHẬT LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07021 - DÃY NGOẶC ĐÚNG DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07022 - PHẦN TỬ CÓ SỐ LẦN XUẤT HIỆN NHIỀU HƠN BÊN PHẢI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07023 - ĐẢO TỪ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07024 - GHÉP VÁN GỖ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07027 - PHẦN TỬ BÊN PHẢI ĐẦU TIÊN LỚN HƠN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07028 - NHỊP CHỨNG KHOÁN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07029 - GIẢI MÃ XÂU KÝ TỰ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07030 - HÌNH CHỮ NHẬT 0-1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07041 - BIỂU THỨC ĐÚNG DÀI NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07045 - GÕ BÀN PHÍM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Stack\DSA07110 - KIỂM TRA DÃY NGOẶC ĐÚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\BIẾN ĐỔI DÃY SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\BIẾN ĐỔI VỀ XÂU ĐỐI XỨNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\BIỂU THỨC ĐÚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\CHIA CẮT ĐỒ THỊ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\CHÊNH LỆCH NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DI CHUYỂN TRONG MÊ CUNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DUYỆT CÂY THEO MỨC ĐẢO NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DÃY CON CÓ TỔNG BẰNG S.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DÃY CON LIÊN TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DÃY CON TĂNG DẦN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\DÃY SỐ ĐẸP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\HOÁN VỊ NGƯỢC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\HÌNH CHỮ NHẬT ĐƠN SẮC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\KIỂM TRA CÂU VIẾT ĐÚNG QUY TẮC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\KIỂM TRA LIÊN THÔNG MẠNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\LIÊN THÔNG MẠNH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\LŨY THỪA BẬC K.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\LŨY THỪA MA TRẬN 4.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\LŨY THỪA MA TRẬN 5.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\LŨY THỪA MA TRẬN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\MIN VÀ MAX.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\MÃ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\NGƯỜI DU LỊCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\PHẦN TỬ LỚN NHẤT TRONG DÃY CON.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\QUÂN VUA TRÊN BÀN CỜ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SẮP XẾP CHẴN LẺ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SẮP XẾP QUÂN HẬU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ 2 ƯU THẾ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ CẶP BẠN TỐT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ LƯỢNG DẤU NGOẶC VUÔNG LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ LỘC PHÁT ĐỐI XỨNG CHẴN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ LỘC PHÁT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ MAY MẮN TIẾP THEO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ NGUYÊN THỦY.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\SỐ THUẬN NGHỊCH.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TRÒ CHƠI CARO _NGANG_.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TÍCH CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TỔ HỢP “NGƯỢC”.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TỔNG CHỮ SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TỔNG CÁC SỐ TỰ NHIÊN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TỔNG SỐ CÁCH DI CHUYỂN.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\TỔNG ƯỚC SỐ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\XÂU AB.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\XÂU CON NHỎ NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐOẠN LIÊN TIẾP.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐÁNH SỐ THỨ TỰ CẶP DẤU NGOẶC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐƯỜNG ĐI CÓ HƯỚNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐẢO TỬ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐẾM SỐ VẬT CẢN TRÊN MÊ CUNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐỈNH THẮT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Thực hành\ĐỈNH TRỤ VÀ CẠNH CẦU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11001 - CÂY BIỂU THỨC 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11002 - CÂY BIỂU THỨC 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11003 - DUYỆT CÂY 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11004 - DUYỆT CÂY THEO MỨC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11005 - DUYỆT CÂY 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11006 - DUYỆT CÂY KIỂU XOẮN ỐC.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11008 - KIỂM TRA NODE LÁ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11010 - CÂY NHỊ PHÂN HOÀN HẢO.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11011 - CÂY NHỊ PHÂN ĐỦ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11012 - CÂY NHỊ PHÂN BẰNG NHAU.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11014 - TỔNG NODE LÁ BÊN PHẢI.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11015 - TỔNG LỚN NHẤT.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11017 - DUYỆT CÂY NHỊ PHÂN TÌM KIẾM 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11018 - XÂY DỰNG LẠI CÂY NHỊ PHÂN TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11019 - DUYỆT CÂY NHỊ PHÂN TÌM KIẾM 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11020 - KIỂM TRA CÂY NHỊ PHÂN TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11021 - NODE LÁ CỦA CÂY NHỊ PHÂN TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11022 - NODE TRUNG GIAN CỦA CÂY NHỊ PHÂN TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11023 - ĐỘ SÂU CÂY NHỊ PHÂN TÌM KIẾM.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11024 - CÂY NHỊ PHÂN TÌM KIẾM CÂN BẰNG 1.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11025 - CÂY NHỊ PHÂN TÌM KIẾM CÂN BẰNG 2.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11026 - DUYỆT SAU CÂY TÌM KIẾM CÂN BẰNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11027 - ĐẾM SỐ NODE LÁ CÂY NHỊ PHÂN TÌM KIẾM CÂN BẰNG.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11028 - ĐỘ CAO CỦA CÂY.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11029 - ĐƯỜNG ĐI TỚI NODE LÁ.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSA11030 - KHOẢNG CÁCH GIỮA HAI NODE.cpp" />
+    <ClCompile Include="Data_Structures_and_Algorithms_PTIT-main\Tree\DSAKT060 - TRUY VẤN ĐỐI XỨNG.cpp" />
+    <ClCompile Include="DSA.cpp" />
+    <ClCompile Include="Pattern.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\.vscode\c_cpp_properties.json" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\.vscode\settings.json" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01004 - SINH TỔ HỢP.java" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\Generation\DSA01007 - XÂU AB CÓ ĐỘ DÀI N.java" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\README.md" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\Stack\.DS_Store" />
+    <Content Include="Data_Structures_and_Algorithms_PTIT-main\Đề bài\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pattern.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
